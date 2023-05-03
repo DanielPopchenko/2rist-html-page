@@ -1,0 +1,250 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Utils */
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.section {
+    margin-top: 120px;
+}
+
+
+/* header */
+
+.header {
+    padding-top: 31px;
+    height: 800px;
+    background-color: #000;
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0 0 54px 54px;
+    color: #fff;
+}
+
+.header a:hover {
+    opacity: 1;
+}
+
+.header-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+}
+
+.header-discover__link {
+    display: inline-flex;
+    max-width: 273px;
+    height: 72px;
+    align-items: center;
+    background: #7b61ff;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header-discover__link::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/globus.svg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.header-content {
+    margin-top: 183px;
+}
+
+.header-discover__link-container {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* form */
+
+.header-form__container {
+    display: block;
+    margin-top: 184px;
+}
+
+.header-form {
+    width: 1140px;
+    max-height: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    color: #161414;
+    padding: 14px 8px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    display: block;
+    color: #5b5b5b;
+    margin-bottom: -8px;
+    font-weight: 300;
+}
+
+.select {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    color: #161414;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background: #7b61ff;
+    border-radius: 12px;
+    border: none;
+    /* margin-left: auto; */
+}
+
+.search-btn::after {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/find.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-form__item {
+    display: flex;
+    align-items: center;
+    padding: 16px 19px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #161414;
+}
+
+.header-form__item::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 19px;
+    background-image: url('../images/location.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.date-calendar {
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+/* .header-form__item-content {}  */
+
+
+/* nav */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 54px;
+}
+
+.nav-list a {
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+
+/* user */
+
+.user {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.user-content {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.user-content__greeting {
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+.user-content__name {
+    font-weight: 600;
+}
+
+.user-avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.user-avatar__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.user-avatar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
