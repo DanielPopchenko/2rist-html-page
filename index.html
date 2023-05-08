@@ -23,16 +23,16 @@
                         <a href="#" class="nav-list__link nav-list__link--active">Home</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="#" class="nav-list__link nav-list__link--active">Hotels</a>
+                        <a href="#hotels" class="nav-list__link nav-list__link--active">Hotels</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="#" class="nav-list__link nav-list__link--active">Restaurants</a>
+                        <a href="#hotels" class="nav-list__link nav-list__link--active">Restaurants</a>
                     </li>
                     <li class="nav-list__item">
                         <a href="#" class="nav-list__link nav-list__link--active">Tours</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="#" class="nav-list__link nav-list__link--active">Destinations</a>
+                        <a href="#destinations" class="nav-list__link nav-list__link--active">Destinations</a>
                     </li>
                     <li class="nav-list__item">
                         <a href="#" class="nav-list__link nav-list__link--active">Activities</a>
@@ -65,10 +65,11 @@
 
             <div class="header-form__container">
                 <form action="" class="header-form form">
+                    <!-- ! сделать под каждый айтэм свою иконку -->
                     <div class="header-form__item">
                         <div class="header-form__item-content">
                             <label for="destinations" class="label">Location </label> <br />
-                            <select name="" class="select" id="destinations">
+                            <select name="" class="select">
                   <option value="all">Explore nearby destinations</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
@@ -120,11 +121,288 @@
 
     <!-- section - 1 -->
 
-    <section class="section">
+    <section id="destinations" class="section destinations">
         <div class="container">
-            <h2>Popular Destinations</h2>
+            <h2 class="destinations-title section-title">Popular Destinations</h2>
+
+            <ul class="destinations-list">
+                <li class="destinations-list_item">
+                    <img src="./images/popular-1.jpg" alt="Big Sur" />
+                    <p>
+                        Big Sur <br />
+                        <span>California, USA</span>
+                    </p>
+                </li>
+                <li class="destinations-list_item">
+                    <img src="./images/popular-2.jpg" alt="Prescott" />
+                    <p>
+                        Prescott <br />
+                        <span>Arizona, USA </span>
+                    </p>
+                </li>
+                <li class="destinations-list_item">
+                    <img src="./images/popular-3.jpg" alt="Fort Mayers" />
+                    <p>
+                        Fort Mayers <br />
+                        <span>Florida, USA </span>
+                    </p>
+                </li>
+                <li class="destinations-list_item">
+                    <img src="./images/popular-4.jpg" alt="Tucson" />
+                    <p>
+                        Tucson <br />
+                        <span>Arizona, USA </span>
+                    </p>
+                </li>
+                <li class="destinations-list_item">
+                    <img src="./images/popular-5.jpg" alt="St. Joseph" />
+                    <p>
+                        St. Joseph <br />
+                        <span>Michigan, USA </span>
+                    </p>
+                </li>
+                <li class="destinations-list_item">
+                    <img src="./images/popular-6.jpg" alt="Madrid" />
+                    <p>
+                        Madrid <br />
+                        <span>Spain </span>
+                    </p>
+                </li>
+            </ul>
         </div>
     </section>
+
+    <!-- section - 2 -->
+    <section id="hotels" class="section hotels-rests">
+        <div class="container">
+            <div class="section-nav">
+                <h2 class="hotels-rests_title section-title">Hotels and Restaurants</h2>
+                <button type="button" class="section-btn">View all</button>
+            </div>
+
+            <ul class="hotels-list">
+                <li class="hotels-list_item">
+                    <img src="./images/hotel-1.jpg" alt="Monastero Santa" />
+                    <p>Monastero Santa Rosa Hotel & Spa</p>
+                    <div class="hotels_loc-rating">
+                        <span class="hotels-location">Salerno, Italy</span>
+
+                        <div class="hotels-rating">
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="hotels-list_item">
+                    <img src="./images/hotel-2.jpg" alt="Monastero Santa" />
+                    <p>Grand Hotel Tremezzo</p>
+
+                    <div class="hotels_loc-rating">
+                        <span class="hotels-location">Lake Como, Italy</span>
+
+                        <div class="hotels-rating">
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="hotels-list_item">
+                    <img src="./images/hotel-3.jpg" alt="Monastero Santa" />
+                    <p>The Oberoi Udaivilas, Udaipur</p>
+
+                    <div class="hotels_loc-rating">
+                        <span class="hotels-location">Udaipur, India</span>
+
+                        <div class="hotels-rating">
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="hotels-list_item">
+                    <img src="./images/hotel-4.jpg" alt="Monastero Santa" />
+                    <p>AKA Beverly Hills</p>
+
+                    <div class="hotels_loc-rating">
+                        <span class="hotels-location">Los Angeles, United States</span>
+
+                        <div class="hotels-rating">
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                            <span class="hotels-rating_star"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section - 3 -->
+    <section class="section advices">
+        <div class="container">
+            <div class="section-nav">
+                <h2 class="advices_title section-title">Travel Tips and Advices</h2>
+                <button type="button" class="section-btn">View all</button>
+            </div>
+
+            <ul class="tips-list">
+                <li class="tips-list_item">
+                    <img src="images/advice-1.jpg" alt="" />
+
+                    <div class="tips-list_item-content">
+                        <h3>East Village Ice Cream Crawl</h3>
+                        <br />
+                        <p>
+                            We will stop at five different world-class <br />ice cream shops on this 1.5 mile 1.5 hour tour. At each ice cream store we'll explore the story behind the business and see what makes the ice cream unique as you savor every…
+                        </p>
+
+                        <div class="tips-stats">
+                            <span class="tips-stats_date">Today</span>
+                            <span class="tips-stats_user">Maria Philips</span>
+                            <span class="tips-stats_comments">2</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="tips-list_item">
+                    <img src="images/advice-2.jpg" alt="" />
+                    <div class="tips-list_item-content">
+                        <h3>Brooklyn Bridge cinematic photo walk</h3>
+                        <br />
+                        <p>
+                            This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open to capture clients at different locations upon request for an additional charge.
+                        </p>
+
+                        <div class="tips-stats">
+                            <span class="tips-stats_date">Today</span>
+                            <span class="tips-stats_user">James Calzoni</span>
+                            <span class="tips-stats_comments">17</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section - 4 -->
+    <section class="activities section">
+        <div class="container">
+            <div class="section-nav">
+                <h2 class="hotels-rests_title section-title">Activities</h2>
+                <button type="button" class="section-btn">View all</button>
+            </div>
+
+            <ul class="activities-list">
+                <li class="activities-list_item">
+                    <img src="./images/activities-1.jpg" alt="Sailing" />
+                    <p>Sailing</p>
+                </li>
+
+                <li class="activities-list_item">
+                    <img src="./images/activities-2.jpg" alt="Climbing" />
+                    <p>Climbing</p>
+                </li>
+
+                <li class="activities-list_item">
+                    <img src="./images/activities-3.jpg" alt="Skiing" />
+                    <p>Skiing</p>
+                </li>
+
+                <li class="activities-list_item">
+                    <img src="./images/activities-4.jpg" alt="Hiking" />
+                    <p>Hiking</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section - 5 -->
+    <section class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-content_text">
+                    <h3 class="about-title">About Us</h3>
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat <br /> odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet <br /> ultrices.
+                        Class aptent taciti sociosqu ad litora torquent per conubia <br /> nostra, per inceptos himenaeos.
+                    </p>
+
+                    <button type="button" class="section-btn about-us_btn">Read more</button>
+                </div>
+
+                <img class="about-img" src="./images/about-us.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="column-1">
+                    <a href="#" class="logo">
+                        <img src="./images/black-logo.svg" alt="logotype" />
+                    </a>
+                    <p>We always make our customers <br />happy by providing as many choises as possible</p>
+                </div>
+
+                <div class="column-2">
+                    <div class="column-2_columns">
+                        <div class="column-2_about column">
+                            <h3>About</h3>
+                            <a href="#">About Us</a>
+                            <a href="#">Features</a>
+                            <a href="#">News</a>
+                            <a href="#">Menu</a>
+                        </div>
+
+                        <div class="column-2_company column">
+                            <h3>Company</h3>
+                            <a href="#">Why 2rism</a>
+                            <a href="#">Partner With Us</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">Blog</a>
+                        </div>
+
+                        <div class="column-2_support column">
+                            <h3>Support</h3>
+                            <a href="#">Account</a>
+                            <a href="#">Support Center</a>
+                            <a href="#">Feedback</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-3">
+                    <h3>
+                        Subscribe on our destination review <br /> newsletters
+                    </h3>
+                    <div class="column-3_input-group">
+                        <div class="text-field">
+                            <div class="text-filled_icon"></div>
+
+                            <input class="text-field_input" type="text" placeholder="Your email" />
+                            <button class="text-field_btn"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -9,7 +9,7 @@ body {
 /* Utils */
 
 .container {
-    max-width: 1250px;
+    max-width: 1340px;
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -87,7 +87,7 @@ body {
 }
 
 .header-form {
-    width: 1140px;
+    max-width: 1140px;
     max-height: 88px;
     margin-left: auto;
     margin-right: auto;
@@ -247,4 +247,393 @@ body {
     height: 12px;
     background-color: #ff0000;
     border-radius: 50%;
+}
+
+
+/* popular-destinations */
+
+
+/* section */
+
+.section-title {
+    font-size: 32px;
+    line-height: 48px;
+    color: #161414;
+    font-weight: 600;
+}
+
+.destinations-title {
+    margin-bottom: 64px;
+}
+
+.section-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.section-btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    min-width: 105px;
+    height: 44px;
+    background-color: #f6f4ff;
+    border-radius: 12px;
+    border: none;
+    /* text */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5243c2;
+}
+
+.section-btn::after {
+    content: '';
+    display: inline-block;
+    width: 13.3px;
+    height: 12.7px;
+    background-image: url('../images/arrow-right.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 7px;
+}
+
+
+/* destinations */
+
+.destinations-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.destinations-list_item img {
+    margin-bottom: 8px;
+}
+
+.destinations-list_item span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    color: #979797;
+}
+
+
+/* hotels */
+
+.hotels-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotels-list_item img {
+    margin-bottom: 10px;
+}
+
+.hotels-list_item p {
+    margin-bottom: 12px;
+}
+
+.hotels-location {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    color: #979797;
+}
+
+.hotel-list_item-location {
+    display: flex;
+    align-items: center;
+}
+
+.hotels-location::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 14.5px;
+    margin-right: 7px;
+    background-image: url('../images/location-grey.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.hotels_loc-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hotels_loc-rating .hotels-rating_star::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background-image: url('../images/filled-star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* travel tips */
+
+.tips-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tips-list_item {
+    display: flex;
+}
+
+.tips-list_item+.tips-list_item {
+    margin-left: 32px;
+}
+
+.tips-list_item-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+.tips-list_item h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161414;
+}
+
+.tips-list_item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    color: #5b5b5b;
+}
+
+.tips-stats {
+    display: flex;
+    margin-top: 124px;
+}
+
+.tips-stats span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #878787;
+    margin-right: 24px;
+}
+
+.tips-stats .tips-stats_date::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url('../images/tips-date.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+.tips-stats .tips-stats_user::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    background-image: url('../images/tips-user.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+.tips-stats .tips-stats_comments::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url('../images/tips-comment.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+
+/* activities */
+
+.activities-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activities-list_item img {
+    margin-bottom: 16px;
+}
+
+
+/* about */
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-content_text {
+    display: block;
+    margin-right: 32px;
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #161414;
+    margin-top: 86px;
+    margin-bottom: 32px;
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #5b5b5b;
+    margin-bottom: 32px;
+}
+
+.about-img {
+    border-radius: 14px;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 120px;
+    background-color: #f9f9f9;
+    padding: 120px 0px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #5b5b5b;
+}
+
+.footer a {
+    display: inline-block;
+}
+
+.footer-columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-columns h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #161414;
+    margin-bottom: 20px;
+}
+
+.column-2_columns {
+    display: flex;
+    gap: 64px;
+}
+
+.column a {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #5b5b5b;
+    margin-bottom: 12px;
+}
+
+.column+.column {
+    margin-left: 64px;
+}
+
+.column-1,
+.column-2 {
+    margin-right: 64px;
+}
+
+
+/* column - 3, text-field */
+
+.text-field {
+    display: flex;
+}
+
+.text-filled_icon {
+    position: relative;
+}
+
+.text-filled_icon::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    background-image: url('../images/input-envelope.svg');
+    width: 20px;
+    height: 18px;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-field_input {
+    display: inline-block;
+    padding: 16px 74px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: none;
+    color: #161414;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.text-field_input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    color: #5b5b5b;
+}
+
+.text-field_btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background-color: #7b61ff;
+    border-radius: 12px;
+    border: none;
+    margin-left: 16px;
+}
+
+.text-field_btn::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/input_arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
