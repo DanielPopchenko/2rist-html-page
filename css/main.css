@@ -139,7 +139,7 @@ body {
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url('../images/find.svg');
+    background-image: url('./logos/find.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,11 +344,6 @@ body {
     font-size: 13px;
     line-height: 23px;
     color: #979797;
-}
-
-.hotel-list_item-location {
-    display: flex;
-    align-items: center;
 }
 
 .hotels-location::before {
