@@ -1,4 +1,5 @@
 import { ArrowRight, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { activities } from '../data/travelData';
 import { SectionHeading } from './SectionHeading';
 
@@ -23,9 +24,9 @@ export function ExperienceGrid() {
                 {activity.location}
               </p>
             </div>
-            <button type="button" aria-label={`Explore ${activity.title}`}>
+            <Link to="/experiences" aria-label={`Explore ${activity.title}`}>
               <ArrowRight />
-            </button>
+            </Link>
           </article>
         ))}
       </div>

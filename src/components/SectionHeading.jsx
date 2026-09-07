@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-export function SectionHeading({ eyebrow, title, description, action = 'See all' }) {
+export function SectionHeading({ eyebrow, title, description, action = 'See all', actionTo = '/experiences' }) {
   return (
     <div className="section-heading">
       <div>
@@ -8,10 +9,10 @@ export function SectionHeading({ eyebrow, title, description, action = 'See all'
         <h2>{title}</h2>
         {description && <p>{description}</p>}
       </div>
-      <a href="#newsletter">
+      <Link to={actionTo}>
         {action}
         <ArrowUpRight size={17} />
-      </a>
+      </Link>
     </div>
   );
 }

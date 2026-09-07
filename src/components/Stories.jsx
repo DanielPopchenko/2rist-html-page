@@ -1,4 +1,5 @@
 import { ArrowUpRight, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { stories } from '../data/travelData';
 import { SectionHeading } from './SectionHeading';
 
@@ -11,6 +12,7 @@ export function Stories() {
           title="Notes from the road"
           description="Practical ideas and personal stories for people who travel with curiosity."
           action="Read the journal"
+          actionTo="/journal"
         />
         <div className="story-grid">
           {stories.map((story) => (
@@ -29,9 +31,9 @@ export function Stories() {
                 </div>
                 <h3>{story.title}</h3>
                 <p>{story.excerpt}</p>
-                <a href="#newsletter" aria-label={`Read ${story.title}`}>
+                <Link to="/journal" aria-label={`Read ${story.title}`}>
                   Read story <ArrowUpRight size={17} />
-                </a>
+                </Link>
               </div>
             </article>
           ))}

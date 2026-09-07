@@ -1,43 +1,11 @@
-import { useState } from 'react';
-import { CalendarDays, Compass, MapPin, Menu, Search, Sparkles, Users, X } from 'lucide-react';
-
-const navItems = [
-  ['Experiences', '#experiences'],
-  ['Stories', '#stories'],
-  ['About', '#about'],
-];
+import { CalendarDays, Compass, MapPin, Search, Sparkles, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { SiteNav } from './SiteNav';
 
 export function Header({ onSearch }) {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <header className="hero" id="home">
-      <nav className="nav container" aria-label="Main navigation">
-        <a className="brand" href="#home" aria-label="2rism home">
-          <img src="/images/logo.svg" alt="2rism" />
-        </a>
-
-        <div className={`nav__links ${menuOpen ? 'nav__links--open' : ''}`}>
-          {navItems.map(([label, href]) => (
-            <a key={label} href={href} onClick={() => setMenuOpen(false)}>
-              {label}
-            </a>
-          ))}
-          <a className="nav__cta" href="#newsletter" onClick={() => setMenuOpen(false)}>
-            Plan a trip
-          </a>
-        </div>
-
-        <button
-          className="nav__toggle"
-          type="button"
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
-      </nav>
+      <SiteNav />
 
       <div className="hero__content container">
         <div className="eyebrow eyebrow--light">
@@ -48,10 +16,10 @@ export function Header({ onSearch }) {
         <p>
           Handpicked places, meaningful experiences, and the freedom to travel at your own pace.
         </p>
-        <a className="hero__link" href="#experiences">
+        <Link className="hero__link" to="/experiences">
           <Compass size={19} />
           Explore this season
-        </a>
+        </Link>
       </div>
 
       <form

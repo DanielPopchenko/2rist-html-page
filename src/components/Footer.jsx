@@ -1,4 +1,5 @@
 import { ArrowRight, Instagram, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Footer({ onSubscribe, subscriptionMessage }) {
   return (
@@ -34,9 +35,9 @@ export function Footer({ onSubscribe, subscriptionMessage }) {
             <p>Travel far. Feel at home.</p>
           </div>
           <div className="footer__links">
-            <a href="#experiences">Experiences</a>
-            <a href="#stories">Journal</a>
-            <a href="#about">Our story</a>
+            <Link to="/experiences">Experiences</Link>
+            <Link to="/journal">Journal</Link>
+            <Link to="/about">Our story</Link>
           </div>
           <div className="footer__social">
             <a href="mailto:hello@2rism.travel" aria-label="Email 2rism"><Mail /></a>
